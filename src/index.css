@@ -7,8 +7,22 @@
   font-family: "DM Serif Text", serif;
 }
 
-.app{
+.app {
   min-height: 100vh;
-  display: grid;
+  display: flex;
+  justify-content: center;  /* Center vertically */
+  align-items: center;  /* Center horizontally */
   background: #e2d4ff;
+  padding: 20px;
 }
+
+@media (max-width: 768px) {
+  .app {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Ensure full screen height */
+  }
+}
+

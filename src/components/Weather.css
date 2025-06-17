@@ -8,6 +8,12 @@
     align-items: center;
 }
 
+@media (max-width: 480px) {
+  .weather {
+    padding: 40px 15px;
+  }
+}
+
 .search-bar{
     display: flex;
     align-items: center;
@@ -68,3 +74,4 @@
     width: 26px;
     margin-top: 10px;
 }
+
